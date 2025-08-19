@@ -14,7 +14,8 @@ def identificacao():
 def contexto():
     user_agent = request.headers.get('User-Agent')
     ip = request.remote_addr
-    return render_template("contexto.html", user_agent=user_agent, ip=ip)
+    host = request.host
+    return render_template("contexto.html", user_agent=user_agent, ip=ip, host=host)
 
 if __name__ == "__main__":
     app.run()
