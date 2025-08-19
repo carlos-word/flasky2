@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+    <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('identificacao') }}">Identificação</a></li>
+        <li><a href="{{ url_for('contexto') }}">Contexto da requisição</a></li>
+    </ul>
+{% endblock %}
