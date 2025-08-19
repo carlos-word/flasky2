@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+    <p><b>Seu navegador é:</b> {{ user_agent }}</p>
+    <p><b>O IP do computador remoto é:</b> {{ ip }}</p>
+    <p><b>O host da aplicação é:</b> {{ host }}</p>
+    <br>
+    <a href="{{ url_for('index') }}">Voltar</a>
+{% endblock %}
